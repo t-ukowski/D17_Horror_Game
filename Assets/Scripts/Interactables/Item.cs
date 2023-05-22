@@ -9,7 +9,7 @@ public class Item : Interactable
     // Start is called before the first frame update
     void Start()
     {
-      
+        promptMessage = "Podnieœ";
     }
 
     // Update is called once per frame
