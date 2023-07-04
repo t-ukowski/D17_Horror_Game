@@ -15,7 +15,7 @@ public class AddMeshColliderToChildren : MonoBehaviour
         foreach (Transform child in obj.transform) 
         {
             // Check if the name of the object starts with "Wall" or "Stair"
-            if (child.name.StartsWith("Wall") || child.name.StartsWith("Stair")) 
+            if (child.name.StartsWith("Wall") || child.name.StartsWith("Stair") || child.name.StartsWith("Floor")) 
             {
                 // If the object has a MeshFilter and doesn't already have a MeshCollider
                 if (child.GetComponent<MeshFilter>() != null && child.GetComponent<MeshCollider>() == null) 
